@@ -60,6 +60,45 @@ public class Main {
         byte cansPaintBrown = (byte) (allClass / cansPaintBrownUnit);
         System.out.println("В школе, где " + allClass + " классов, нужно " + cansPaintWhite + " банок белой краски и " + cansPaintBrown + " банок коричневой краски");
 
+        byte oneBananGr = 80;
+        byte oneHundredMilkGr = 105;
+        byte oneIceCreamGr = 100;
+        byte oneEggGr = 70;
+        short allBananGr = (short) (oneBananGr * 5);
+        short allHundredMilkGr = (short) (oneHundredMilkGr * 2);
+        short allIceCreamGr = (short) (oneIceCreamGr * 2);
+        short allEggGr = (short) (oneEggGr * 4);
+        short athletesBreakfastGr = (short) (allBananGr + allHundredMilkGr + allIceCreamGr + allEggGr);
+        float athletesBreakfastKg = (athletesBreakfastGr * 0.001f);
+        System.out.println("Завтрак спортсмена в граммах " + athletesBreakfastGr);
+        System.out.println("Завтрак спортсмена в килограмах " + athletesBreakfastKg);
 
+        byte loseWeightKg = 7;
+        short loseWeightGr = (short) (loseWeightKg * 1000);
+        short lostWeightInDayGr1 = 250;
+        short lostWeightInDayGr2 = 500;
+        byte onAverageDays1 = (byte) (loseWeightGr / lostWeightInDayGr1);
+        byte onAverageDays2 = (byte) (loseWeightGr / lostWeightInDayGr2);
+        System.out.println(onAverageDays1 + " дней");
+        System.out.println(onAverageDays2 + " дней");
+
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryChristina = 76230;
+        int increaseSalaryMasha = (int) (salaryMasha * 1.1);
+        int salaryMashaAnnual = (int) (salaryMasha * 12);
+        int increaseSalaryMashaAnnual = (int) (increaseSalaryMasha * 12);
+        int differenceSalaryMashaAnnual = (int) (increaseSalaryMashaAnnual - salaryMashaAnnual);
+        System.out.println("Маша теперь получает " + increaseSalaryMasha + " рублей. Годовой доход вырос на " + differenceSalaryMashaAnnual + " рублей");
+        int increaseSalaryDenis = (int) (salaryDenis * 1.1);
+        int salaryDenisAnnual = (int) (salaryDenis * 12);
+        int increaseSalaryDenisAnnual = (int) (increaseSalaryDenis * 12);
+        int differenceSalaryDenisAnnual = (int) (increaseSalaryDenisAnnual - salaryDenisAnnual);
+        System.out.println("Денис теперь получает " + increaseSalaryDenis + " рублей. Годовой доход вырос на " + differenceSalaryDenisAnnual + " рублей");
+        int increaseSalaryChristina = (int) (salaryChristina * 1.1f);
+        int salaryChristinaAnnual = (int) (salaryChristina * 12);
+        int increaseSalaryChristinaAnnual = (int) (increaseSalaryChristina * 12);
+        int differenceSalaryChristinaAnnual = (int) (increaseSalaryChristinaAnnual - salaryChristinaAnnual);
+        System.out.println("Кристина теперь получает " + increaseSalaryChristina + " рублей. Годовой доход вырос на " + differenceSalaryChristinaAnnual + " рублей");
 
     }    }
