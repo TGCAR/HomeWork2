@@ -34,7 +34,7 @@ public class Main {
         byte ludmilaIvanovna = 23;
         byte annaSergeevna = 27;
         byte ekaterinaAndreevna = 30;
-        byte allstudents = (byte) (ludmilaIvanovna + annaSergeevna +ekaterinaAndreevna);
+        byte allstudents = (byte) (ludmilaIvanovna + annaSergeevna + ekaterinaAndreevna);
         short allSheets = 480;
         byte oneSheetsOneStudents = (byte) (allSheets / allstudents);
         System.out.println("На каждого ученика рассчитано " + oneSheetsOneStudents + " листов бумаги");
@@ -55,9 +55,10 @@ public class Main {
         byte cansPaintUnit = 120;
         byte cansPaintWhiteUnit = 2;
         byte cansPaintBrownUnit = 4;
+
         byte allClass = (byte) (cansPaintUnit / (cansPaintWhiteUnit + cansPaintBrownUnit));
-        byte cansPaintWhite = (byte) (allClass / cansPaintWhiteUnit);
-        byte cansPaintBrown = (byte) (allClass / cansPaintBrownUnit);
+        byte cansPaintWhite = (byte) (allClass * cansPaintWhiteUnit);
+        byte cansPaintBrown = (byte) (allClass * cansPaintBrownUnit);
         System.out.println("В школе, где " + allClass + " классов, нужно " + cansPaintWhite + " банок белой краски и " + cansPaintBrown + " банок коричневой краски");
 
         byte oneBananGr = 80;
@@ -101,4 +102,5 @@ public class Main {
         int differenceSalaryChristinaAnnual = (int) (increaseSalaryChristinaAnnual - salaryChristinaAnnual);
         System.out.println("Кристина теперь получает " + increaseSalaryChristina + " рублей. Годовой доход вырос на " + differenceSalaryChristinaAnnual + " рублей");
 
-    }    }
+    }
+}
